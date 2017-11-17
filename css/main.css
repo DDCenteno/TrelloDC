@@ -1,0 +1,170 @@
+/* colores del header
+azul oscuro #026AA7
+azul claro #298FCA */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #026AA7;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+/* header left */
+header .left{
+    /*outline: 1px pink solid;*/
+    margin: 5px 0;
+    display: inline-block;
+    float: left;
+}
+header .logoLeft {
+    background-color: rgb(93, 170, 211);
+    margin: 5px 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    width: 90px;
+    /*outline: 1px solid green;*/
+    border-radius: 5px;
+    font-weight: bolder;
+    display: inline-block;
+}
+header .search {
+    display: inline-block;
+    background-color: rgb(93, 170, 211);
+    margin: 5px 5px;
+    height: auto;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+    /*outline: 1px pink solid;*/
+}
+
+.search i {
+    margin-left: 85%;
+}
+/* header centro imagen */
+header img {
+    box-sizing: border-box;
+    margin-left: 30%;
+    margin-top: 10px; 
+    /*outline: 1px solid greenyellow;*/
+    width: 90px;
+    height: auto;
+    opacity: 0.5;
+}
+header img:hover{
+    opacity: 1;
+}
+header .blockRight{
+    float: right;
+    display: inline-block;
+    /*outline: yellow 1px solid;*/
+    color: white;
+    margin:5px 0;
+}
+.blockRight .iconPlus, .warning, .ring{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(93, 170, 211);
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px
+}
+.blockRight .userCircle{
+    margin: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/images/userImage.png');
+    background-size: cover;
+    float: right;
+}
+/* Main principal */
+body {
+    background-color: #1d8dc2;
+}
+body .firstSection{
+    /*outline: 1px solid pink;*/
+    height: 50px;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    clear: both;
+}
+.firstSection h3, a, h5{
+    display: inline-block;
+    margin: 10px;/* todos alineados con margen*/
+}
+.firstSection a{
+    color: white; /* todo blanco */
+}
+.firstSection .rightMenu{
+    float: right;
+}
+/* se supone que esto no sirve y es de pantalla ... */
+.rightMenu i{
+    margin: 5px;
+    opacity: 0.6;
+}
+/* Empecemos con lo bueno...
+agregando estilos al container y al boxAdd */
+#container {
+    /*outline: 1px solid pink;*/
+    padding: 5px;
+    display: inline-block;
+    width:100%;
+    height: 500px;
+}
+#container .boxAdd {
+    color:white;
+    background-color: rgb(30, 70, 126);
+    opacity: 0.8;
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* cursor encima cambia color */
+#container .boxAdd:hover{
+    background-color: rgb(13, 40, 80);
+}
+/* jalados para js */
+.divStyle{
+    height: 60px;
+}
+.inputStyle{
+    margin-top: 5px;
+    border:none;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botonStyle{
+    background-color: rgb(36, 160, 36);
+    color: white;
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 5px;
+}
+.botonStyle:hover{
+    background-color: green;
+}
+.titleStyle{
+    line-height: 0;
+    font-weight: bolder;
+}
