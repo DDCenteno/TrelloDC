@@ -56,10 +56,10 @@ botonAddList.addEventListener('click',function(event){
       newListWork.setAttribute('class','newListStyle');
       secondInput.setAttribute('class', 'secondInput');
       newInput.value = '';
-    });
+    
     // ver. 0.0.3 evento para que agreguen una tarea en secondInput
     // contenga un boton y textarea
-    secondInput.addEventListener('click', function(event){
+      secondInput.addEventListener('click', function(event){
         // elementos nuevos
         var newTextArea = document.createElement('textarea');
         var botonInput = document.createElement('button');
@@ -69,6 +69,19 @@ botonAddList.addEventListener('click',function(event){
         botonInput.textContent = 'Añadir'; // contenido del boton
         // metiendo al html
         newListWork.appendChild(newTextArea);
-    });
+        newTextArea.focus();
+        newListWork.removeChild(secondInput);
+        newListWork.appendChild(botonInput);
+    
     // ver. 0.0.4 || focus al dar clic
+    botonInput.addEventListener('click', function(){
+        var newListItem = document.createElement('div');
+        newListItem.classList.add('newListItemStyle');
+        newListItem.textContent = newTextArea.value;
+        newListWork.insertBefore(newListItem,newTextArea);
+        newTextArea.focus();
+        newTextArea.value = '';
+      });
+    });
+  });
 });

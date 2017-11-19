@@ -148,6 +148,8 @@ agregando estilos al container y al boxAdd */
     padding: 2px 5px;
     border-radius: 0px;
     background-color: rgb(201, 200, 200);
+    float: left;
+    margin: 0 5px;
 }
 .inputStyle{
     margin-top: 5px;
@@ -192,6 +194,8 @@ agregando estilos al container y al boxAdd */
     height: auto;
     margin: 0;
     box-sizing: border-box;
+    float: left;
+    margin: 0 5px;
 }
 .secondInput {
     color: gray;
@@ -200,4 +204,18 @@ agregando estilos al container y al boxAdd */
     float: right;
     width: 100%;
     padding: 5px;
+}
+.newListItemStyle {
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    font-size:14px;
+    padding: 5px;
+    
+}
+.textAreaStyle{
+    width: 70%;
+    margin: 5px;
+    border-radius: 5px;
+    width: 95%;
 }
