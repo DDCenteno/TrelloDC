@@ -8,10 +8,13 @@ azul claro #298FCA */
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-image: url('')
+    background-image: url('../assets/images/imgTristan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* imagen de Tristan Gion*/
 }
 header {
-    background-color: rgba(0, 0, 0, 0.137);
+    background-color: rgba(0, 0, 0, 0.295);
     width: 100%;
     height: 50px;
     box-sizing: border-box;
@@ -25,7 +28,7 @@ header .left{
     float: left;
 }
 header .logoLeft {
-    background-color: rgb(93, 170, 211);
+    background-color: rgba(0, 0, 0, 0.39);
     margin: 5px 5px;
     padding: 5px;
     color: white;
@@ -38,13 +41,14 @@ header .logoLeft {
 }
 header .search {
     display: inline-block;
-    background-color: rgb(93, 170, 211);
+    background-color: rgba(0, 0, 0, 0.39);
     margin: 5px 5px;
     height: auto;
     width: 150px;
     padding: 5px;
     border-radius: 5px;
     color: white;
+    text-shadow: 2px 2px 2px gray;
     box-sizing: border-box;
     /*outline: 1px pink solid;*/
 }
@@ -75,7 +79,7 @@ header .blockRight{
 .blockRight .iconPlus, .warning, .ring{
     width: 30px;
     height: 30px;
-    background-color: rgb(93, 170, 211);
+    background-color: rgba(0, 0, 0, 0.39);
     box-sizing: border-box;
     display: inline-block;
     margin: 5px 5px;
@@ -103,6 +107,7 @@ body .firstSection{
     width: 100%;
     display: inline-block;
     color: white;
+    text-shadow: 2px 2px 2px black;
     clear: both;
 }
 .firstSection h3, a, h5{
@@ -131,7 +136,7 @@ agregando estilos al container y al boxAdd */
 }
 #container .boxAdd {
     color:white;
-    background-color: rgb(30, 70, 126);
+    background-color: rgb(31, 31, 31);
     opacity: 0.8;
     width: 20%;
     height: auto;
